@@ -1,14 +1,16 @@
 # Test Graphs
 
-## kcg.txt
+## Format
 
-Karate Club Graph, from networkx's graph generators
+Edgelist files have names of the form `*.edges`. Each line has an edge listed as a space seperated pair of vertex names (usually numbers)
 
-File starts with a list of node positions in format 
+Position files have names of the form `.pos`. Each line has a vertex name and two coordinates:
 
-    Node Number, X-position, Y-position
+    <Vertex> <X-position> <Y-position>
 
-and then has a list of edges as pairs of nodes. The graph is undirected, and each edge is only listed once.
+## Karate Club Graph
+
+An example graph from NetworkX's graph generators, and position data from it's spring layout algorithm. In files `kcg.edges` and `kcg.pos`
 
 ## Further Notes
 
